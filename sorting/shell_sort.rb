@@ -7,7 +7,7 @@ def shell_sort( array )
     for i in 0..( array.length - 1 )
       j = i
       tmp = array[i]
-      while j >= increment && ( array[j-increment] > tmp )
+      while j >= increment and ( array[j-increment] > tmp )
         array[j] = array[j-increment]
         j = j - increment
       end
