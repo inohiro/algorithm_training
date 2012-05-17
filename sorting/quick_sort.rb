@@ -1,4 +1,4 @@
-require './rand_array.rb'
+require './util.rb'
 require 'pp'
 
 def quick_sort( array )
