@@ -1,7 +1,7 @@
 require './util.rb'
 require 'pp'
 
-def insertion_sort( array )
+def selection_sort( array )
   for i in 0..( array.length - 1 )
     min = i
     for j in ( i + 1 )..( array.length - 1 )
