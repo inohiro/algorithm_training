@@ -9,15 +9,16 @@ class Array
 end
 
 def bubble_sort( array )
-  swapped = false
-  while( !swapped )
-    for i in 0..( array.length - 1 )
-      if array[i-1] > array[i]
-        array.swap( i-1, i )
-        swapped = true
+  for i in 0..( array.length - 1 )
+    j = array.length - 1
+    while i < j
+      if array[j-1] > array[j]
+        array.swap( j-1, j )
       end
+      j = j - 1 # it's not cool :(
     end
   end
+
   array
 end
 
